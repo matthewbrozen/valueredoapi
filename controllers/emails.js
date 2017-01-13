@@ -53,8 +53,8 @@ function sendOne (req, res, next) {
         from: 'ValueEgg.com <'+emailsetup+'>',
         to: newEmail.email,
         subject: 'ValueEgg - Exact list price for ' + newEmail.address,
-        text: ' Thanks for visiting ValueEgg.com. We believe your property ' + newEmail.address + ' should be listed for $' + upper.formatMoney() + ' to $' + lower.formatMoney() + ". If you're interested in selling, list your property for $" + list.formatMoney() + ' with the top apartment broker in the area, David Bramante, find out more by calling 213-375-3752 or visit www.breinvestment.com. Hope that helps! ValueEgg.com',
-        html: ' Thanks for visiting ValueEgg.com. We believe your property ' + newEmail.address + ' should be listed for $' + upper.formatMoney() + ' to $' + lower.formatMoney() + ". If you're interested in selling, list your property for $" + list.formatMoney() + ' with the top apartment broker in the area, David Bramante, find out more by calling 213-375-3752 or visit www.breinvestment.com. <br><br><small> Hope that helps! ValueEgg.com</small>',
+        text: ' Thanks for visiting ValueEgg.com. We believe your property ' + newEmail.address + ' should be listed for $' + upper.formatMoney() + ' to $' + lower.formatMoney() + ". If you're interested in selling, list your property for $" + list.formatMoney() + ' with the top apartment broker in the area, David, find out more by calling 213-375-3751. Hope that helps! ValueEgg.com',
+        html: ' Thanks for visiting ValueEgg.com. We believe your property ' + newEmail.address + ' should be listed for $' + upper.formatMoney() + ' to $' + lower.formatMoney() + ". If you're interested in selling, list your property for $" + list.formatMoney() + ' with the top apartment broker in the area, David , find out more by calling 213-375-3751. <br><br><small> Hope that helps! ValueEgg.com</small>',
       }
       transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
